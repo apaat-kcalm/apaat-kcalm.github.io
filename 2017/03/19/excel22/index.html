@@ -1,0 +1,758 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="skills," />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.0" />
+
+
+
+
+
+
+<meta name="description" content="index+match反向匹配,弥补vlookup函数的缺陷
+通过match函数 GET 对象的信息，index找到对象所在的另一区域，根据对象位置信息GET值。
+
+index(b:b,match(f2,c:c,0))
+
+match（找谁，哪找，1/0）快速定位
+
+index(在哪提b:b，几行：match，几列省略)">
+<meta property="og:type" content="article">
+<meta property="og:title" content="6 excel图表">
+<meta property="og:url" content="http://yoursite.com/2017/03/19/excel22/index.html">
+<meta property="og:site_name" content="y'blog">
+<meta property="og:description" content="index+match反向匹配,弥补vlookup函数的缺陷
+通过match函数 GET 对象的信息，index找到对象所在的另一区域，根据对象位置信息GET值。
+
+index(b:b,match(f2,c:c,0))
+
+match（找谁，哪找，1/0）快速定位
+
+index(在哪提b:b，几行：match，几列省略)">
+<meta property="og:updated_time" content="2017-03-20T14:06:06.824Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="6 excel图表">
+<meta name="twitter:description" content="index+match反向匹配,弥补vlookup函数的缺陷
+通过match函数 GET 对象的信息，index找到对象所在的另一区域，根据对象位置信息GET值。
+
+index(b:b,match(f2,c:c,0))
+
+match（找谁，哪找，1/0）快速定位
+
+index(在哪提b:b，几行：match，几列省略)">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    sidebar: {"position":"left","display":"hide","offset":12,"offset_float":0,"b2t":false,"scrollpercent":false},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: 'Author'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2017/03/19/excel22/"/>
+
+
+
+
+
+  <title> 6 excel图表 | y'blog </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">y'blog</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            ホーム
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            カテゴリ
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            アーカイブ
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            タグ
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/03/19/excel22/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="kcalm">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="y'blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                6 excel图表
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">投稿日</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-03-19T18:00:08+08:00">
+                2017-03-19
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h2 id="index-match"><a href="#index-match" class="headerlink" title="index+match"></a>index+match</h2><p>反向匹配,弥补vlookup函数的缺陷</p>
+<p>通过match函数 GET 对象的信息，index找到对象所在的另一区域，根据对象位置信息GET值。</p>
+<blockquote>
+<p>index(b:b,match(f2,c:c,0))</p>
+</blockquote>
+<h2 id="match（找谁，哪找，1-0）"><a href="#match（找谁，哪找，1-0）" class="headerlink" title="match（找谁，哪找，1/0）"></a>match（找谁，哪找，1/0）</h2><p>快速定位</p>
+<blockquote>
+<p>index(在哪提b:b，几行：match，几列省略)</p>
+</blockquote>
+ <a id="more"></a> 
+<p>快速提取</p>
+<h2 id="搞定一个常用技巧：制作一、二级下拉菜单"><a href="#搞定一个常用技巧：制作一、二级下拉菜单" class="headerlink" title="搞定一个常用技巧：制作一、二级下拉菜单"></a>搞定一个常用技巧：制作一、二级下拉菜单</h2><h3 id="1级菜单"><a href="#1级菜单" class="headerlink" title="1级菜单"></a>1级菜单</h3><h4 id="方式1"><a href="#方式1" class="headerlink" title="方式1"></a>方式1</h4><p>选中对象<br>    数据–数据验证<br>    验证条件<br>    序列<br>    数据范围</p>
+<h4 id="方式2"><a href="#方式2" class="headerlink" title="方式2"></a>方式2</h4><p>alt+下箭头</p>
+<h3 id="2级菜单"><a href="#2级菜单" class="headerlink" title="2级菜单"></a>2级菜单</h3><p>清除无效数据 ctrl+g（勾选常量）<br>    创建<br>    选择数据———【公式-根据所选内容创建（–首列）】<br>    分别选择2个空白区域，数据–数据验证<br>    （序列—创建名称区域）<br>    indirect(“n-1”)<br>引用区域内最左上的单元格</p>
+<h2 id="多表汇总"><a href="#多表汇总" class="headerlink" title="多表汇总"></a>多表汇总</h2><p>不同表同值<br>    sum+*!单元格</p>
+<h2 id="模子一样，里头数据不同——合并计算"><a href="#模子一样，里头数据不同——合并计算" class="headerlink" title="模子一样，里头数据不同——合并计算"></a>模子一样，里头数据不同——合并计算</h2><p>空白单元格<br>    逐个添加<br>    勾首行，最左列</p>
+<h2 id="图表"><a href="#图表" class="headerlink" title="图表"></a>图表</h2><p>基本操作<br>    创建 插入图表 （单击选中对象范围）</p>
+<hr>
+<p>柱形图</p>
+<ul>
+<li>直观，少量数据对比</li>
+</ul>
+<p>条形图</p>
+<p>折线图</p>
+<ul>
+<li>数据点多，时间<br>饼图</li>
+<li>不同数据的百分比</li>
+</ul>
+<hr>
+<p>修改<br>    单击参数<br>    右键更改图表类型，属性设置；数据标记，颜色…<br>    图表样式，层叠</p>
+<h2 id="创意图表"><a href="#创意图表" class="headerlink" title="创意图表"></a>创意图表</h2><p><strong>形状–选中copy–选中图表（矩形）–粘贴</strong></p>
+<h3 id="组合图表"><a href="#组合图表" class="headerlink" title="组合图表"></a>组合图表</h3><p>组合图表搭配<br>    更改图表类型—组合<br>    双坐标轴<br>参数</p>
+<h4 id="饼图-饼图"><a href="#饼图-饼图" class="headerlink" title="饼图+饼图"></a>饼图+饼图</h4><p>复合饼图<br>    分割依据、值<br>    调整参数<br>数据标记，颜色…</p>
+<h4 id="双层饼图"><a href="#双层饼图" class="headerlink" title="双层饼图"></a>双层饼图</h4><p>表最上面的数据作为第一个饼图</p>
+<p><strong>饼图制作</strong></p>
+<p>一个饼图<br>选取包括首行</p>
+<p>第二个饼图<br>    选中区域先复制–选中图表–再粘贴<br>    分离饼图<br>次坐标轴<br>修改参数-饼图分离程度（参考值60%）</p>
+<p>设置属性<br>    颜色<br>    数据标识<br>    记录<br>    操作细节，比如选取整个，而不是忽略首行</p>
+<h4 id="数据透视表"><a href="#数据透视表" class="headerlink" title="数据透视表"></a>数据透视表</h4><p>前提<br>    源数据要规范</p>
+<hr>
+<p>思路<br>    需要几列几行数据项？分别是什么？<br>    分别要干什么？<br>    各回各家，各找各妈<br>    轴(=行)，值<br>    //工具栏（分析，设计）、美化</p>
+<hr>
+<p>DO<br>右键-值字段设置<br>带小箭头的项可筛选<br>计算字段—-（字段，项目和集）—插入字段</p>
+<hr>
+<p>分段统计<br>[无中生有]<br>    不等距分段<br>    选中同段数据—-创建组<br>    等距分段<br>    任选一个对象—创建组–步长（间隔.)<br>    按X(制定名称)批量生成一系列工作表</p>
+<p>思路<br>    有X<br>    X为源数据插入透视表<br>    X拖入筛选区域<br>    [分析]显示报表筛选页<br>    清除多余格式，统一修改标题<br>全选sheet，全选单元格，再做相应操作<br>    删除空格<br>    利用函数公式写入动态更新的标题<br>    字段不能重复添加（筛选项和行区域）<br>    辅助列<br>辅助列的值=筛选字段（公式）<br>    想看哪个数据值得明细，就双击哪个数据</p>
+<hr>
+<p>交互式动态图表报表<br>切片器<br>    改变筛选条件，实时更新呈现结果<br>    流程<br>    数据源 [开始]—套用表格样式<br>    任选，新建透视表<br>    选中，插入图表<br>    插入切片器<br>    延伸（多种源数据表和切片器联动）<br>    前4步一样<br>    报表连接<br>    修改参数，美化</p>
+<hr>
+<p>宏<br>    代替手工重复劳动———自动化<br>    基本流程<br>    窗口底部启用宏录制，出现按钮<br>    点击按钮，宏名，快捷键<br>    录制<br>    新的相同对象，快捷键启用<br>    保存工作表<br>excel启用宏的工作薄<br>    应用<br>    清空数据<br>    另存工作表</p>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/skills/" rel="tag"># skills</a>
+          
+        </div>
+      
+
+      
+        
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/03/19/自定义css+html/" rel="next" title="#5 自定义css+html">
+                <i class="fa fa-chevron-left"></i> #5 自定义css+html
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/03/19/excel1/" rel="prev" title="7 excel图表">
+                7 excel图表 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            見出し
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            概要
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/avatar.gif"
+               alt="kcalm" />
+          <p class="site-author-name" itemprop="name">kcalm</p>
+           
+              <p class="site-description motion-element" itemprop="description"></p>
+          
+        </div>
+        <nav class="site-state motion-element">
+
+          
+            <div class="site-state-item site-state-posts">
+              <a href="/archives">
+                <span class="site-state-item-count">13</span>
+                <span class="site-state-item-name">ポスト</span>
+              </a>
+            </div>
+          
+
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-tags">
+              <a href="/tags/index.html">
+                <span class="site-state-item-count">1</span>
+                <span class="site-state-item-name">タグ</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        
+        
+
+        
+
+
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#index-match"><span class="nav-number">1.</span> <span class="nav-text">index+match</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#match（找谁，哪找，1-0）"><span class="nav-number">2.</span> <span class="nav-text">match（找谁，哪找，1/0）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#搞定一个常用技巧：制作一、二级下拉菜单"><span class="nav-number">3.</span> <span class="nav-text">搞定一个常用技巧：制作一、二级下拉菜单</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1级菜单"><span class="nav-number">3.1.</span> <span class="nav-text">1级菜单</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#方式1"><span class="nav-number">3.1.1.</span> <span class="nav-text">方式1</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#方式2"><span class="nav-number">3.1.2.</span> <span class="nav-text">方式2</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2级菜单"><span class="nav-number">3.2.</span> <span class="nav-text">2级菜单</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#多表汇总"><span class="nav-number">4.</span> <span class="nav-text">多表汇总</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#模子一样，里头数据不同——合并计算"><span class="nav-number">5.</span> <span class="nav-text">模子一样，里头数据不同——合并计算</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#图表"><span class="nav-number">6.</span> <span class="nav-text">图表</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#创意图表"><span class="nav-number">7.</span> <span class="nav-text">创意图表</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#组合图表"><span class="nav-number">7.1.</span> <span class="nav-text">组合图表</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#饼图-饼图"><span class="nav-number">7.1.1.</span> <span class="nav-text">饼图+饼图</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#双层饼图"><span class="nav-number">7.1.2.</span> <span class="nav-text">双层饼图</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#数据透视表"><span class="nav-number">7.1.3.</span> <span class="nav-text">数据透视表</span></a></li></ol></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2017</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">kcalm</span>
+</div>
+
+
+<div class="powered-by">
+  Powered by <a class="theme-link" href="https://hexo.io">Hexo</a>
+</div>
+
+<div class="theme-info">
+  Theme -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Pisces
+  </a>
+</div>
+
+
+        
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.0"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.0"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.0"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.0"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.0"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.0"></script>
+
+
+
+  
+
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>

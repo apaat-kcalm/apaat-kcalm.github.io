@@ -1,89 +1,657 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
+<!doctype html>
+
+
+
   
-  <title>y&#39;blog</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
+
+
+<html class="theme-next pisces use-motion" lang="">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="Hexo, NexT" />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.0" />
+
+
+
+
+
+
+<meta property="og:type" content="website">
 <meta property="og:title" content="y'blog">
 <meta property="og:url" content="http://yoursite.com/index.html">
 <meta property="og:site_name" content="y'blog">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="y'blog">
-  
-    <link rel="alternate" href="/atom.xml" title="y&#39;blog" type="application/atom+xml">
-  
-  
-    <link rel="icon" href="/favicon.png">
-  
-  
-    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
-  
-  <link rel="stylesheet" href="/css/style.css">
-  
 
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    sidebar: {"position":"left","display":"hide","offset":12,"offset_float":0,"b2t":false,"scrollpercent":false},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: 'Author'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/"/>
+
+
+
+
+
+  <title> y'blog </title>
 </head>
 
-<body>
-  <div id="container">
-    <div id="wrap">
-      <header id="header">
-  <div id="banner"></div>
-  <div id="header-outer" class="outer">
-    <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="/" id="logo">y&#39;blog</a>
-      </h1>
-      
-    </div>
-    <div id="header-inner" class="inner">
-      <nav id="main-nav">
-        <a id="main-nav-toggle" class="nav-icon"></a>
-        
-          <a class="main-nav-link" href="/">Home</a>
-        
-          <a class="main-nav-link" href="/archives">Archives</a>
-        
-      </nav>
-      <nav id="sub-nav">
-        
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
-        
-        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
-      </nav>
-      <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
-      </div>
-    </div>
-  </div>
-</header>
-      <div class="outer">
-        <section id="main">
-  
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2017/03/20/hello-world/" class="article-date">
-  <time datetime="2017-03-20T07:31:21.714Z" itemprop="datePublished">2017-03-20</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/03/20/hello-world/">Hello World</a>
-    </h1>
+<body itemscope itemtype="http://schema.org/WebPage" lang="">
+
   
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left 
+   page-home 
+ ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">y'blog</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            ホーム
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            カテゴリ
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            アーカイブ
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            タグ
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+  <section id="posts" class="posts-expand">
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/03/20/blog/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="kcalm">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="y'blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2017/03/20/blog/" itemprop="url">
+                  無題
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">投稿日</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-03-20T22:10:00+08:00">
+                2017-03-20
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
       </header>
     
-    <div class="article-entry" itemprop="articleBody">
+
+
+    <div class="post-body" itemprop="articleBody">
+
       
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
+      
+
+      
+        
+          
+            <hr>
+<p>title: “#9 hexo博客搭建”<br>date: 2017- 03- 19 18:50:08<br>tags: skills<br>​categories: learn</p>
+<hr>
+<h1 id="搭建模子"><a href="#搭建模子" class="headerlink" title="搭建模子"></a>搭建模子</h1><p>hexo———本地环境</p>
+<p><a href="https://git- for- windows.github.io/" target="_blank" rel="external">git 2.8.1</a></p>
+<ul>
+<li>git bash here，git - - version</li>
+</ul>
+<p><a href="http://www.runoob.com/nodejs/nodejs- install- setup.html" target="_blank" rel="external">NodeJs 4.4.3</a><br>全局安装hexo npm install - g hexo- cli [翻墙]</p>
+<p>•     /shift+右键 打开命令行、win+r - - -  命令行cmd - - - </p>
+<p>##部署远程博客</p>
+<h3 id="github账号"><a href="#github账号" class="headerlink" title="github账号"></a><strong>github账号</strong></h3><p>注册（略）</p>
+<p>登录</p>
+<ul>
+<li>新建仓库pro</li>
+<li>用户名.github.io</li>
+<li>setting- - - 打开GitHub Pages</li>
+</ul>
+<p>ssh key</p>
+<p>本地生成</p>
+<ul>
+<li>设置注册账号邮箱和用户名</li>
+<li>git config - - global user.email “XXXXXX@qq.com” git config - - global user.name “XXXXX”</li>
+<li>3个回车</li>
+<li>C:\Users\Administrator.ssh文件夹<br>id_rsa和id_rsa.pub</li>
+</ul>
+<p>添加到github</p>
+<ul>
+<li>setting ssh keys</li>
+<li>id_rsa.pub文件里的内容copy过来</li>
+</ul>
+<h2 id="本地部署hexo"><a href="#本地部署hexo" class="headerlink" title="本地部署hexo"></a>本地部署hexo</h2><p> hexo init 初始化</p>
+<p>在你想保存博客内容的路径（文件夹）下里右键 git bash<br><strong>得到目录结构</strong></p>
+<ul>
+<li>_config.yml是整个博客的全局配置</li>
+<li>source是存放生成博客内容所需资源的地方</li>
+<li>source/_posts是文章的默认存放处</li>
+<li>themes是博客主题的存放点</li>
+<li>scaffolds是模板的存放点，这里的模板指的是新建文章的初始内容，Hexo已经默认在此文件夹生成了post.md page.md draft.md</li>
+</ul>
+<hr>
+<ul>
+<li>npm install<br>hexo运行的各种插件</li>
+<li>hexo generate（重新生成博客内容）</li>
+<li>博客内容有改动</li>
+<li>多出public文件夹- - - - 博客内容</li>
+<li>hexo server ，打开 <a href="http://localhost:4000" target="_blank" rel="external">http://localhost:4000</a><ul>
+<li>打不开</li>
+<li>默认端口 4000，改成8888</li>
+<li>hexo server - p 8888</li>
+<li>打开<a href="http://localhost:8888" target="_blank" rel="external">http://localhost:8888</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="设置git-推送"><a href="#设置git-推送" class="headerlink" title="设置git 推送"></a>设置git 推送</h2><p>下载插件（让hexo能用git推送）<br>npm install hexo- deployer- git - - save</p>
+<hr>
+<p>主目录_config.yml</p>
+<ul>
+<li>修改<blockquote>
+<p>deploy:<br>type: git<br>repo: git@github.com:apaat- kcalm/apaat- kcalm.github.io.git<br>branch: master</p>
+</blockquote>
+</li>
+</ul>
+<h2 id="发布"><a href="#发布" class="headerlink" title="发布"></a>发布</h2><ul>
+<li>hexo deploy</li>
+<li>点开 你的用户名.github.io<h1 id="初步优化"><a href="#初步优化" class="headerlink" title="初步优化"></a>初步优化</h1><h4 id="主目录-基本信息"><a href="#主目录-基本信息" class="headerlink" title="主目录- - - 基本信息"></a>主目录- - - 基本信息</h4></li>
+<li>_config.yml<blockquote>
+<p>/#Site<br>title: //填写网站名<br> subtitle: //副标题，网站名下面<br>description: //网站描述<br>author: //作者<br>language: zh- Hans //语言，中文</p>
+</blockquote>
+</li>
+</ul>
+<h4 id="主题相关"><a href="#主题相关" class="headerlink" title="主题相关"></a>主题相关</h4><p>更换主题</p>
+<ul>
+<li>登录自己的github/cd 到自己github地址</li>
+<li>git clone 主题地址（比如 <a href="https://github.com/Ben02/hexo-" target="_blank" rel="external">https://github.com/Ben02/hexo-</a> theme- Anatole.git）<ul>
+<li>hexoBlog/themes 右键git bash</li>
+<li>clone的文件夹名改成主题名称</li>
+</ul>
+</li>
+<li>主目录 _config.yml(看github说明)</li>
+</ul>
+<p>更新主题<br>cd themes/jacman<br>git pull origin master</p>
+<hr>
+<p>配置</p>
+<p>参考</p>
+<ul>
+<li><a href="http://theme-" target="_blank" rel="external">http://theme-</a> next.iissnan.com/getting- started.html#activate- next- theme</li>
+<li><a href="http://www.jianshu.com/p/d95cff938277" target="_blank" rel="external">http://www.jianshu.com/p/d95cff938277</a></li>
+</ul>
+<p>（主题 _config.yml）next主题有3种 关键词：scheme</p>
+<ul>
+<li>菜单（主题 _config.yml）</li>
+<li>名称和连接</li>
+<li>显示文本菜单项</li>
+</ul>
+<hr>
+<p> 添加菜单项X</p>
+<p>languages/zh- Hans.yml</p>
+<p> 关键词：menu 下添加X名</p>
+<ul>
+<li>对应的图标</li>
+<li><p>菜单项名：图标名<br>item name: icon name</p>
+<ul>
+<li>enable ——是否显示图标</li>
+<li>false ——去掉图标</li>
+</ul>
+<p>侧栏（主题 _config.yml）<br>sidebar</p>
+</li>
+<li>设置侧栏位置<br>position</li>
+<li>设置侧栏显示的时机<br>display</li>
+<li>头像</li>
+<li>avatar</li>
+<li>（目录若不存在 新建 uploads ）将头像放置主题目录下的 source/uploads/ </li>
+<li>（主题 _config.yml）avatar: /uploads/avatar.png</li>
+<li>添加【标签】页面</li>
+<li>hexo new page tags</li>
+<li>修改 根目录下的source/tags 的 index.md</li>
+</ul>
+<hr>
+<p>title: tags<br>type: “tags”<br>comments: false</p>
+<hr>
+<ul>
+<li>主题配置文件<br>取消 #tags: /tags 这行注释</li>
+<li>新建草稿，编辑<br>title: 测试文章<br>tags:</li>
+<li>Testing</li>
+<li>Another Tag</li>
+</ul>
+<hr>
+<ul>
+<li>添加【分类】页面</li>
+<li>hexo new page categories</li>
+<li>修改 根目录下的source/categories 的 index.md</li>
+</ul>
+<hr>
+<p>title: categories<br>type: “categories”<br>comments: false</p>
+<hr>
+<ul>
+<li>主题配置文件<br>取消 #categories: /categories 这行注释</li>
+<li>在草稿，编辑<br>title: 测试文章<br>tags:</li>
+<li>Testing</li>
+<li>Another Tag<br>categories：testing</li>
+</ul>
+<hr>
+<h3 id="文章引用"><a href="#文章引用" class="headerlink" title="文章引用"></a>文章引用</h3><ul>
+<li>语法</li>
+<li>其中 slug 是md文件对应的文件名，title 是要在文章引用显示的标题。</li>
+<li> 
+<h3 id="阅读全文跳转"><a href="#阅读全文跳转" class="headerlink" title="阅读全文跳转"></a>阅读全文跳转</h3></li>
+<li>在文章中使用 &lt;!- -  more - - &gt; 手动进行截断</li>
+<li>在文章的 front- matter 中添加 description，并提供文章摘录</li>
+<li>自动形成摘要，在 主题配置文件 中添加：<blockquote>
+<p>auto_excerpt:<br>enable: true<br>length: 150</p>
+</blockquote>
+</li>
+</ul>
+<hr>
+<p><strong>删除博文 /source/_posts</strong></p>
+<ul>
+<li>图片<ul>
+<li>本地 存放<ul>
+<li>主目录/source 新建images</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>文章<ul>
+<li>!{图名}(地址).makedown</li>
+</ul>
+</li>
+</ul>
+<h1 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h1><p>hexo g = hexo generate 生成博客内容<br>hexo s = hexo server 本地预览<br>hexo d = hexo deploy 远程推送</p>
+<p>正文</p>
+<ul>
+<li>hexo clean 清楚已生成的旧文件 hexo n “文章标题” 新建————编辑（.md）</li>
+</ul>
+<p>草稿</p>
+<ul>
+<li>hexo new draft “new draft title”</li>
+<li>发布：hexo publish draft “your draft title”</li>
+</ul>
+<p>搜狗短语</p>
+<ul>
+<li>hexo s - g 先hexo g,再hexo s<br>yl</li>
+<li>hexo d,- g 先hexo g,再hexo d<h1 id="参考推荐-（多篇）"><a href="#参考推荐-（多篇）" class="headerlink" title="参考推荐~~（多篇）"></a>参考推荐~~（多篇）</h1></li>
+<li><a href="http://www.jianshu.com/p/db7e64d86067" target="_blank" rel="external">http://www.jianshu.com/p/db7e64d86067</a></li>
+<li><a href="http://www.jianshu.com/p/ea5ac6162a96" target="_blank" rel="external">http://www.jianshu.com/p/ea5ac6162a96</a></li>
+<li><a href="http://www.jianshu.com/p/d95cff938277" target="_blank" rel="external">http://www.jianshu.com/p/d95cff938277</a></li>
+<li><a href="http://www.jianshu.com/p/5973c05d7100" target="_blank" rel="external">http://www.jianshu.com/p/5973c05d7100</a></li>
+<li>编辑要先空格！<h1 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h1>报错，FATAL fatal: Not a git repository (or any of the parent directories): .git<br>忘记 git init</li>
+</ul>
+<p>error: failed to execute prompt script (exit code 1)<br> …config.ymld的delay部署地址错误</p>
+<p>重装系统，ssh因为文件位置变动，需要重新设置</p>
+<ul>
+<li>删除从头到尾来了一遍</li>
+<li>hexo是全局安装</li>
+<li>其他hexo插件得重新安装</li>
+</ul>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/03/20/hello-world/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="kcalm">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="y'blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2017/03/20/hello-world/" itemprop="url">
+                  Hello World
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">投稿日</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-03-20T10:41:00+08:00">
+                2017-03-20
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
 <h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
 <p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
 <h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
@@ -93,88 +661,840 @@
 <h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
 <p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
 
+          
+        
       
     </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/03/20/hello-world/" data-id="cj0hsvgqi00002oscerl0lmrh" class="article-share-link">Share</a>
+
+    <div>
       
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
       
     </footer>
-  </div>
+  </article>
+
+
+    
+      
+
   
-</article>
-
 
   
+  
+  
 
-</section>
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/03/19/ppt/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="kcalm">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="y'blog">
+    </span>
+
+    
+      <header class="post-header">
+
         
-          <aside id="sidebar">
-  
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2017/03/19/ppt/" itemprop="url">
+                  #8 ppt处理图片
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">投稿日</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-03-19T18:40:08+08:00">
+                2017-03-19
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
     
 
-  
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+             <a id="more"></a> 
+<h1 id="目标"><a href="#目标" class="headerlink" title="目标"></a>目标</h1><p><a href="http://mubu.io/doc/3HshEM3nZ" target="_blank" rel="external">ppt处理图片</a></p>
+<h1 id="记录"><a href="#记录" class="headerlink" title="记录"></a>记录</h1><p><strong>设置属性</strong></p>
+<ul>
+<li>右键—-设置格式~</li>
+<li>直接用工具栏上的<h2 id="ppt单张图片处理"><a href="#ppt单张图片处理" class="headerlink" title="ppt单张图片处理"></a>ppt单张图片处理</h2><strong>图片工具窗口</strong><h3 id="A-去背"><a href="#A-去背" class="headerlink" title="A.去背"></a>A.去背</h3><blockquote>
+<p>去除背景</p>
+</blockquote>
+</li>
+</ul>
+<p>方法一</p>
+<p>（调整）–颜色–设置透明度<br>缺陷：有毛边</p>
+<hr>
+<p>方法二，（调整）–删除背景</p>
+<ul>
+<li>定边界（主体对象纳入选框）</li>
+<li>辅助标记<br>灵活控制留下和去除的部分<br>增，减可以直接拖动（效果一竖、一横）<h3 id="案例"><a href="#案例" class="headerlink" title="案例"></a>案例</h3><h4 id="案例：多边形去背（柔化棱角）"><a href="#案例：多边形去背（柔化棱角）" class="headerlink" title="案例：多边形去背（柔化棱角）"></a>案例：多边形去背（柔化棱角）</h4>多边形工具。取色器<br>与主体保持一定距离!!!，距离尽量一致!!!<br>  合并形状–相交<br>ctrl+先点图片，+任意多边形<br>  效果—柔化边缘<br>  背景图（调整区域–更正，颜色，艺术效果 + 图片样式区域） 主体图（去背）<h3 id="变色"><a href="#变色" class="headerlink" title="变色"></a>变色</h3>（调整）—颜色<br>  饱和度<br>  色调<br>  重新着色<br>  案例：图片局部变色强调（多同图）<br>  插入图片<br>  图一—复制—-图二<br>  图一，[颜色]去饱和度<br>  图二 主体去背<br>  重叠图片<br>2图水平，垂直对齐<br>###效果<br>（图片样式）—艺术效果<br>  虚化背景，突出主体（多同图）<br>  插入图片<br>  复制图片<br>ctrl+拖拽<br>  图A虚化,图B主体去背<br>  重叠图片<br>B图拉长顶端，遮掉顶端光晕<h3 id="裁剪"><a href="#裁剪" class="headerlink" title="裁剪"></a>裁剪</h3>大小（大小，裁剪）<br>  逐一裁剪——esc确认<br>  直接输入数值调整大小、放置（对齐工具，拖拽）<br>  其他（线条，文本，色块，颜色）<br>右键设置XX格式<h4 id="案例1-小图导航目录"><a href="#案例1-小图导航目录" class="headerlink" title="案例1 小图导航目录"></a>案例1 小图导航目录</h4>图片全选，裁剪成圆形，<br>前提：裁剪纵横比1:1<br>  shift 画水平直线<br>  调整图片层级——置于顶层/底层<br>  复制：选中按住ctrl，拖拽<br>  alt键可主动依附<h3 id="样式"><a href="#样式" class="headerlink" title="样式"></a>样式</h3><h4 id="案例1-宝丽来效果"><a href="#案例1-宝丽来效果" class="headerlink" title="案例1 宝丽来效果"></a>案例1 宝丽来效果</h4>步骤<br>  设置背景<br>右键—设置背景格式<br>  插入图片<br>剪裁1:1<br>  图片边框<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div></pre></td><td class="code"><pre><div class="line">	添加矩形,置于下层</div><div class="line">画矩形按shift</div><div class="line">与照片上，右，左边距≈</div><div class="line">下方略大</div><div class="line">	无轮廓，白色填充，阴影</div><div class="line">	组合 ctrl+g</div><div class="line">	多张图片组合，阴影~~（注意设置）</div><div class="line">#### 案例2 画中画</div><div class="line">设置背景（图片）</div><div class="line">填充——————图片/纹理填充</div><div class="line">	相纸（外）</div><div class="line">矩形，白色，无边框颜色，阴影</div><div class="line">	画面（里），//添加文字修饰</div><div class="line">间距：与相纸左右上≈，下方略大</div><div class="line"></div><div class="line">无轮廓，**背景色填充</div><div class="line">右键--最末项</div><div class="line">	组合 ctrl+g</div><div class="line">#### 创意进阶</div></pre></td></tr></table></figure></li>
+</ul>
+<p>相片层叠<br>    设置背景<br>    多个矩形<br>ctrl+拖拽—全选<br>    白色轮廓，(线条)实线–斜接<br>    阴影，背景色填充</p>
+<h2 id="多张图片样式"><a href="#多张图片样式" class="headerlink" title="多张图片样式"></a>多张图片样式</h2><p>（样式）</p>
+<p>形状（善用 形状/控点）+填充（图片，图案/纹理，渐变，纯色，无）+各类效果</p>
+<hr>
+<p>[图+文字（标题+正文）]*n</p>
+<h3 id="用表格装"><a href="#用表格装" class="headerlink" title="用表格装"></a>用表格装</h3><p>1.表格—模板，<br>2.图片填充，内容文字写入<br>    插入表格<br>    2*5<br>默认样式（无），所有框线<br>    调节框线<br>下—-上<br>    （填充图片的单元格）逐个设置 长=宽=某数值<br>布局栏<br>    单元格填充图片<br>提前1:1裁剪图片+另存<br>    目的：防止图片变形<br>    设计—-（底纹）—图片<br>    图片<br>颜色，字号（对比）<br>    写入内容<br>    标题，正文<br>颜色，字号（对比）<br>    布局—（对齐方式）—底端对齐<br>点击单元格~~<br>    取消所有框线（无）</p>
+<h3 id="用表格电影海报"><a href="#用表格电影海报" class="headerlink" title="用表格电影海报~~"></a>用表格电影海报~~</h3><p>尺寸—单元格=图片<br>    绘制表格<br>    （选择1）提前裁剪（表格尺寸=图片尺寸）<br>    大图<br>选中整个表格<br>    （底纹图片填充，平铺为纹理）<br>    （选择2 ）调整偏移量、缩放比例//表格大小<br>偏移量左右，上下（可+，可-）//上，下箭头调节<br>    所有边框粗细<br>（绘图边框）—笔颜色、粗细<br>    —-若干小图<br>    （该单元格—填充）<br>    （缩放比例）<br>    重复步骤<br>    图片+形状+填充+形状效果</p>
+<h3 id="拼图：创意照片墙"><a href="#拼图：创意照片墙" class="headerlink" title="拼图：创意照片墙"></a>拼图：创意照片墙</h3><p>图片摆上去<br>    基本形状：图文框<br>    调节控点、大小<br>根据图片<br>    图文框填充（纹理，无轮廓）<br>    加效果<br>    布局错落有致~~~<br>    自带图片样式（28）<br>选取标准：幻灯片风格<br>    自定义(/微调)<br>边框粗细、颜色…</p>
+<h2 id="小图片美化"><a href="#小图片美化" class="headerlink" title="小图片美化~"></a>小图片美化~</h2><p>放大不清晰<br>    形状（大小-宽高，形状–圆，矩形…，颜色–深浅，色相，透明度，渐变，位置–竖、横…，…）+裁剪+文字（文本框）（字号，颜色，对齐方式，…）<br>    基本操作<br>    取色器<br>    ctrl+拖拽——按f4<br>复制多个相同的形状<br>    选中，输高度值<br>快速统一多个形状</p>
+<hr>
+<p><strong>补色思维</strong></p>
+<h2 id="小图片变成大图片"><a href="#小图片变成大图片" class="headerlink" title="小图片变成大图片"></a>小图片变成大图片</h2><p>思路<br>    形状 背景色填充<br>    取图片背景色<br>    (调整)形状+图片<br>    图片是否是渐变+纯色背景(无图案)<br>    观察图片背景渐变是什么方式~<br>    矩形渐变背景<br>图片颜色符合线性渐变<br>    插入图片，矩形<br>    调整矩形与图片<br>    顶端平齐，矩形置于底层<br>    等高<br>    矩形渐变填充<br>    光圈从上到下<br>    取色器<br>    输入标题，文字<br>    用文本框<br>    调整<br>    字号，颜色，…<br>    对齐方式（距离~~）<br>    背景延长拼接<br>图片背景颜色射线渐变<br>    （复制3份），裁剪3部分—左边背景、主体(留点边缘)、右边背景<br>    横向拉长2侧背景<br>//shift等比+/-<br>    主体旁添加文案</p>
+<hr>
+<p><strong>点缀思维</strong><br>    思路<br>    图片、形状<br>    制作形状效果<br>    调整形状和图片</p>
+<h4 id="案例：w8风格页面"><a href="#案例：w8风格页面" class="headerlink" title="案例：w8风格页面"></a>案例：w8风格页面</h4><p>图片，形状对齐，等宽<br>    ctrl + shift 等比复制；拉长矩形<br>    美化矩形<br>填充–相近色~不超过3种<br>    添加文案<br>字体，字号，色块间文字对齐<br>    图标~<br>与主题相关<br>    背景色</p>
+<hr>
+<p><strong>阵列思维</strong><br>重复（形状…)<br>    思路<br>    图片做形状裁剪<br>    多次复制<br>    组合形状和图片</p>
+<h4 id="多个小图制作圆形8-6阵列封面"><a href="#多个小图制作圆形8-6阵列封面" class="headerlink" title="多个小图制作圆形8*6阵列封面"></a>多个小图制作圆形8*6阵列封面</h4><p>找不到清晰大图<br>    8*6<br>无边线<br>    ctrl+shift、f4（重复上一次）<br>    凑齐1行——ctrl+g（编组），<br>    NT插件—矩阵复制功能<br>    选删 ctrl+shift+g（取消编组）、填充图片（图片边线颜色一致）<br>    营造层次感（填充色的深浅）<br>    添加标题（文本框工具）<br>    装饰圆（几个大小、深浅不一的同色圆形）<br>    小图片+文字<br>    4个距离成对错开的竖向长条矩形（颜色）+1个横-长条矩形（颜色、透明度）<br>等距————对称<br>    格式刷（选中参考–|||–目标对象）<br>    快捷键（shift、ctrl、fn+f4）<br>    裁剪摆放图，置于顶层<br>alt<br>    样图确定合适的宽高<br>    全选，统一宽高<br>    添加文案</p>
+<h3 id="大图片美化"><a href="#大图片美化" class="headerlink" title="大图片美化"></a>大图片美化</h3><p>高清<br>    图片放大至全屏<br>    文本框半透明<br>    //文本框—填充，透明度<br>    //形状—-填充，透明度 + 编辑文字<br>标题、正文各一个矩形，摆放位置；图片大小同ppt<br>    形状填充颜色取自图片</p>
+<h4 id="加便利贴"><a href="#加便利贴" class="headerlink" title="加便利贴"></a>加便利贴</h4><p>插入矩形，复制<br>    （选择性粘贴）选择粘贴为图片<br>    样式：旋转-白色<br>    添加文字（文本框），调整角度<br>    图片渐变处理<br>    渐变填充≈蒙版<br>    渐变填充——2个颜色即可<br>    黑—透明<br>    白—透明<br>    调整透明度<br>    文字融为图片<br>1.放大至全屏，右边空白<br>    矩形—填充背景色<br>    艺术字<br>格式—（艺术字样式）—文本效果~转换<br>    调整（字的颜色，大小）</p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
     
+      
 
   
-    
+
   
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/03/19/excel1/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="kcalm">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="y'blog">
+    </span>
+
     
-  <div class="widget-wrap">
-    <h3 class="widget-title">Archives</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/03/">March 2017</a></li></ul>
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2017/03/19/excel1/" itemprop="url">
+                  7 excel图表
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">投稿日</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-03-19T18:30:08+08:00">
+                2017-03-19
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <h1 id="概念"><a href="#概念" class="headerlink" title="概念"></a>概念</h1><p>知道excel函数是叫做什么的？<br>黑盒~只要填入参数就可以生成结果</p>
+<h4 id="计算；"><a href="#计算；" class="headerlink" title="计算；"></a>计算；</h4><pre><code>确立数据之间的关联关系，再以结果展示出来
+数据
+所有保存下来的信息
+</code></pre><h4 id="数据类型"><a href="#数据类型" class="headerlink" title="数据类型"></a>数据类型</h4><pre><code>文本（不能运算），数值（可以运算），错误值，日期，逻辑值
+</code></pre>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2017/03/19/excel1/#more" rel="contents">
+              続きを読む &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/03/19/excel22/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="kcalm">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="y'blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2017/03/19/excel22/" itemprop="url">
+                  6 excel图表
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">投稿日</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-03-19T18:00:08+08:00">
+                2017-03-19
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <h2 id="index-match"><a href="#index-match" class="headerlink" title="index+match"></a>index+match</h2><p>反向匹配,弥补vlookup函数的缺陷</p>
+<p>通过match函数 GET 对象的信息，index找到对象所在的另一区域，根据对象位置信息GET值。</p>
+<blockquote>
+<p>index(b:b,match(f2,c:c,0))</p>
+</blockquote>
+<h2 id="match（找谁，哪找，1-0）"><a href="#match（找谁，哪找，1-0）" class="headerlink" title="match（找谁，哪找，1/0）"></a>match（找谁，哪找，1/0）</h2><p>快速定位</p>
+<blockquote>
+<p>index(在哪提b:b，几行：match，几列省略)</p>
+</blockquote>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2017/03/19/excel22/#more" rel="contents">
+              続きを読む &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/03/19/自定义css+html/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="kcalm">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="y'blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2017/03/19/自定义css+html/" itemprop="url">
+                  #5 自定义css+html
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">投稿日</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-03-19T13:29:08+08:00">
+                2017-03-19
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <h1 id="目标"><a href="#目标" class="headerlink" title="目标"></a>目标</h1><p><a href="http://mubu.io/doc/gxDhq1zat">学习目标</a></p>
+<h1 id="成果"><a href="#成果" class="headerlink" title="成果"></a>成果</h1><p><a href="http://mubu.io/doc/nBTUNhnpt">html和css的相关基础概念整理</a>   </p>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2017/03/19/自定义css+html/#more" rel="contents">
+              続きを読む &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+  </section>
+
+  
+  <nav class="pagination">
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right"></i></a>
+  </nav>
+
+
+
+          </div>
+          
+
+
+          
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
     </div>
   </div>
 
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
 
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Recent Posts</h3>
-    <div class="widget">
-      <ul>
+      
+
+      
+
+      <section class="site-overview sidebar-panel sidebar-panel-active">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/avatar.gif"
+               alt="kcalm" />
+          <p class="site-author-name" itemprop="name">kcalm</p>
+           
+              <p class="site-description motion-element" itemprop="description"></p>
+          
+        </div>
+        <nav class="site-state motion-element">
+
+          
+            <div class="site-state-item site-state-posts">
+              <a href="/archives">
+                <span class="site-state-item-count">13</span>
+                <span class="site-state-item-name">ポスト</span>
+              </a>
+            </div>
+          
+
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-tags">
+              <a href="/tags/index.html">
+                <span class="site-state-item-count">1</span>
+                <span class="site-state-item-name">タグ</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
         
-          <li>
-            <a href="/2017/03/20/hello-world/">Hello World</a>
-          </li>
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
         
-      </ul>
+        
+
+        
+        
+
+        
+
+
+      </section>
+
+      
+
+      
+
     </div>
-  </div>
+  </aside>
 
-  
-</aside>
+
         
       </div>
-      <footer id="footer">
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
   
-  <div class="outer">
-    <div id="footer-info" class="inner">
-      &copy; 2017 kcalm<br>
-      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
-    </div>
-  </div>
-</footer>
-    </div>
-    <nav id="mobile-nav">
-  
-    <a href="/" class="mobile-nav-link">Home</a>
-  
-    <a href="/archives" class="mobile-nav-link">Archives</a>
-  
-</nav>
+  &copy; 
+  <span itemprop="copyrightYear">2017</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">kcalm</span>
+</div>
+
+
+<div class="powered-by">
+  Powered by <a class="theme-link" href="https://hexo.io">Hexo</a>
+</div>
+
+<div class="theme-info">
+  Theme -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Pisces
+  </a>
+</div>
+
+
+        
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
     
 
-<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-
-
-  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
-  <script src="/fancybox/jquery.fancybox.pack.js"></script>
-
-
-<script src="/js/script.js"></script>
-
   </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.0"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.0"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.0"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.0"></script>
+
+
+
+  
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.0"></script>
+
+
+
+  
+
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
 </body>
 </html>

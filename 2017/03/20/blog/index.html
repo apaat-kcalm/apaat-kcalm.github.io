@@ -1,0 +1,898 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="Hexo, NexT" />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.0" />
+
+
+
+
+
+
+<meta name="description" content="title: “#9 hexo博客搭建”date: 2017- 03- 19 18:50:08tags: skills​categories: learn
+
+搭建模子hexo———本地环境
+git 2.8.1
+
+git bash here，git - - version
+
+NodeJs 4.4.3全局安装hexo npm install - g hexo- cli [翻墙]
+•     /shi">
+<meta property="og:type" content="article">
+<meta property="og:title" content="y'blog">
+<meta property="og:url" content="http://yoursite.com/2017/03/20/blog/index.html">
+<meta property="og:site_name" content="y'blog">
+<meta property="og:description" content="title: “#9 hexo博客搭建”date: 2017- 03- 19 18:50:08tags: skills​categories: learn
+
+搭建模子hexo———本地环境
+git 2.8.1
+
+git bash here，git - - version
+
+NodeJs 4.4.3全局安装hexo npm install - g hexo- cli [翻墙]
+•     /shi">
+<meta property="og:updated_time" content="2017-03-20T14:10:24.587Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="y'blog">
+<meta name="twitter:description" content="title: “#9 hexo博客搭建”date: 2017- 03- 19 18:50:08tags: skills​categories: learn
+
+搭建模子hexo———本地环境
+git 2.8.1
+
+git bash here，git - - version
+
+NodeJs 4.4.3全局安装hexo npm install - g hexo- cli [翻墙]
+•     /shi">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    sidebar: {"position":"left","display":"hide","offset":12,"offset_float":0,"b2t":false,"scrollpercent":false},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: 'Author'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2017/03/20/blog/"/>
+
+
+
+
+
+  <title>  | y'blog </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">y'blog</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            ホーム
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            カテゴリ
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            アーカイブ
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            タグ
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/03/20/blog/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="kcalm">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="y'blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">投稿日</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-03-20T22:10:00+08:00">
+                2017-03-20
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <hr>
+<p>title: “#9 hexo博客搭建”<br>date: 2017- 03- 19 18:50:08<br>tags: skills<br>​categories: learn</p>
+<hr>
+<h1 id="搭建模子"><a href="#搭建模子" class="headerlink" title="搭建模子"></a>搭建模子</h1><p>hexo———本地环境</p>
+<p><a href="https://git- for- windows.github.io/" target="_blank" rel="external">git 2.8.1</a></p>
+<ul>
+<li>git bash here，git - - version</li>
+</ul>
+<p><a href="http://www.runoob.com/nodejs/nodejs- install- setup.html" target="_blank" rel="external">NodeJs 4.4.3</a><br>全局安装hexo npm install - g hexo- cli [翻墙]</p>
+<p>•     /shift+右键 打开命令行、win+r - - -  命令行cmd - - - </p>
+<p>##部署远程博客</p>
+<h3 id="github账号"><a href="#github账号" class="headerlink" title="github账号"></a><strong>github账号</strong></h3><p>注册（略）</p>
+<p>登录</p>
+<ul>
+<li>新建仓库pro</li>
+<li>用户名.github.io</li>
+<li>setting- - - 打开GitHub Pages</li>
+</ul>
+<p>ssh key</p>
+<p>本地生成</p>
+<ul>
+<li>设置注册账号邮箱和用户名</li>
+<li>git config - - global user.email “XXXXXX@qq.com” git config - - global user.name “XXXXX”</li>
+<li>3个回车</li>
+<li>C:\Users\Administrator.ssh文件夹<br>id_rsa和id_rsa.pub</li>
+</ul>
+<p>添加到github</p>
+<ul>
+<li>setting ssh keys</li>
+<li>id_rsa.pub文件里的内容copy过来</li>
+</ul>
+<h2 id="本地部署hexo"><a href="#本地部署hexo" class="headerlink" title="本地部署hexo"></a>本地部署hexo</h2><p> hexo init 初始化</p>
+<p>在你想保存博客内容的路径（文件夹）下里右键 git bash<br><strong>得到目录结构</strong></p>
+<ul>
+<li>_config.yml是整个博客的全局配置</li>
+<li>source是存放生成博客内容所需资源的地方</li>
+<li>source/_posts是文章的默认存放处</li>
+<li>themes是博客主题的存放点</li>
+<li>scaffolds是模板的存放点，这里的模板指的是新建文章的初始内容，Hexo已经默认在此文件夹生成了post.md page.md draft.md</li>
+</ul>
+<hr>
+<ul>
+<li>npm install<br>hexo运行的各种插件</li>
+<li>hexo generate（重新生成博客内容）</li>
+<li>博客内容有改动</li>
+<li>多出public文件夹- - - - 博客内容</li>
+<li>hexo server ，打开 <a href="http://localhost:4000" target="_blank" rel="external">http://localhost:4000</a><ul>
+<li>打不开</li>
+<li>默认端口 4000，改成8888</li>
+<li>hexo server - p 8888</li>
+<li>打开<a href="http://localhost:8888" target="_blank" rel="external">http://localhost:8888</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="设置git-推送"><a href="#设置git-推送" class="headerlink" title="设置git 推送"></a>设置git 推送</h2><p>下载插件（让hexo能用git推送）<br>npm install hexo- deployer- git - - save</p>
+<hr>
+<p>主目录_config.yml</p>
+<ul>
+<li>修改<blockquote>
+<p>deploy:<br>type: git<br>repo: git@github.com:apaat- kcalm/apaat- kcalm.github.io.git<br>branch: master</p>
+</blockquote>
+</li>
+</ul>
+<h2 id="发布"><a href="#发布" class="headerlink" title="发布"></a>发布</h2><ul>
+<li>hexo deploy</li>
+<li>点开 你的用户名.github.io<h1 id="初步优化"><a href="#初步优化" class="headerlink" title="初步优化"></a>初步优化</h1><h4 id="主目录-基本信息"><a href="#主目录-基本信息" class="headerlink" title="主目录- - - 基本信息"></a>主目录- - - 基本信息</h4></li>
+<li>_config.yml<blockquote>
+<p>/#Site<br>title: //填写网站名<br> subtitle: //副标题，网站名下面<br>description: //网站描述<br>author: //作者<br>language: zh- Hans //语言，中文</p>
+</blockquote>
+</li>
+</ul>
+<h4 id="主题相关"><a href="#主题相关" class="headerlink" title="主题相关"></a>主题相关</h4><p>更换主题</p>
+<ul>
+<li>登录自己的github/cd 到自己github地址</li>
+<li>git clone 主题地址（比如 <a href="https://github.com/Ben02/hexo-" target="_blank" rel="external">https://github.com/Ben02/hexo-</a> theme- Anatole.git）<ul>
+<li>hexoBlog/themes 右键git bash</li>
+<li>clone的文件夹名改成主题名称</li>
+</ul>
+</li>
+<li>主目录 _config.yml(看github说明)</li>
+</ul>
+<p>更新主题<br>cd themes/jacman<br>git pull origin master</p>
+<hr>
+<p>配置</p>
+<p>参考</p>
+<ul>
+<li><a href="http://theme-" target="_blank" rel="external">http://theme-</a> next.iissnan.com/getting- started.html#activate- next- theme</li>
+<li><a href="http://www.jianshu.com/p/d95cff938277" target="_blank" rel="external">http://www.jianshu.com/p/d95cff938277</a></li>
+</ul>
+<p>（主题 _config.yml）next主题有3种 关键词：scheme</p>
+<ul>
+<li>菜单（主题 _config.yml）</li>
+<li>名称和连接</li>
+<li>显示文本菜单项</li>
+</ul>
+<hr>
+<p> 添加菜单项X</p>
+<p>languages/zh- Hans.yml</p>
+<p> 关键词：menu 下添加X名</p>
+<ul>
+<li>对应的图标</li>
+<li><p>菜单项名：图标名<br>item name: icon name</p>
+<ul>
+<li>enable ——是否显示图标</li>
+<li>false ——去掉图标</li>
+</ul>
+<p>侧栏（主题 _config.yml）<br>sidebar</p>
+</li>
+<li>设置侧栏位置<br>position</li>
+<li>设置侧栏显示的时机<br>display</li>
+<li>头像</li>
+<li>avatar</li>
+<li>（目录若不存在 新建 uploads ）将头像放置主题目录下的 source/uploads/ </li>
+<li>（主题 _config.yml）avatar: /uploads/avatar.png</li>
+<li>添加【标签】页面</li>
+<li>hexo new page tags</li>
+<li>修改 根目录下的source/tags 的 index.md</li>
+</ul>
+<hr>
+<p>title: tags<br>type: “tags”<br>comments: false</p>
+<hr>
+<ul>
+<li>主题配置文件<br>取消 #tags: /tags 这行注释</li>
+<li>新建草稿，编辑<br>title: 测试文章<br>tags:</li>
+<li>Testing</li>
+<li>Another Tag</li>
+</ul>
+<hr>
+<ul>
+<li>添加【分类】页面</li>
+<li>hexo new page categories</li>
+<li>修改 根目录下的source/categories 的 index.md</li>
+</ul>
+<hr>
+<p>title: categories<br>type: “categories”<br>comments: false</p>
+<hr>
+<ul>
+<li>主题配置文件<br>取消 #categories: /categories 这行注释</li>
+<li>在草稿，编辑<br>title: 测试文章<br>tags:</li>
+<li>Testing</li>
+<li>Another Tag<br>categories：testing</li>
+</ul>
+<hr>
+<h3 id="文章引用"><a href="#文章引用" class="headerlink" title="文章引用"></a>文章引用</h3><ul>
+<li>语法</li>
+<li>其中 slug 是md文件对应的文件名，title 是要在文章引用显示的标题。</li>
+<li> 
+<h3 id="阅读全文跳转"><a href="#阅读全文跳转" class="headerlink" title="阅读全文跳转"></a>阅读全文跳转</h3></li>
+<li>在文章中使用 &lt;!- -  more - - &gt; 手动进行截断</li>
+<li>在文章的 front- matter 中添加 description，并提供文章摘录</li>
+<li>自动形成摘要，在 主题配置文件 中添加：<blockquote>
+<p>auto_excerpt:<br>enable: true<br>length: 150</p>
+</blockquote>
+</li>
+</ul>
+<hr>
+<p><strong>删除博文 /source/_posts</strong></p>
+<ul>
+<li>图片<ul>
+<li>本地 存放<ul>
+<li>主目录/source 新建images</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>文章<ul>
+<li>!{图名}(地址).makedown</li>
+</ul>
+</li>
+</ul>
+<h1 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h1><p>hexo g = hexo generate 生成博客内容<br>hexo s = hexo server 本地预览<br>hexo d = hexo deploy 远程推送</p>
+<p>正文</p>
+<ul>
+<li>hexo clean 清楚已生成的旧文件 hexo n “文章标题” 新建————编辑（.md）</li>
+</ul>
+<p>草稿</p>
+<ul>
+<li>hexo new draft “new draft title”</li>
+<li>发布：hexo publish draft “your draft title”</li>
+</ul>
+<p>搜狗短语</p>
+<ul>
+<li>hexo s - g 先hexo g,再hexo s<br>yl</li>
+<li>hexo d,- g 先hexo g,再hexo d<h1 id="参考推荐-（多篇）"><a href="#参考推荐-（多篇）" class="headerlink" title="参考推荐~~（多篇）"></a>参考推荐~~（多篇）</h1></li>
+<li><a href="http://www.jianshu.com/p/db7e64d86067" target="_blank" rel="external">http://www.jianshu.com/p/db7e64d86067</a></li>
+<li><a href="http://www.jianshu.com/p/ea5ac6162a96" target="_blank" rel="external">http://www.jianshu.com/p/ea5ac6162a96</a></li>
+<li><a href="http://www.jianshu.com/p/d95cff938277" target="_blank" rel="external">http://www.jianshu.com/p/d95cff938277</a></li>
+<li><a href="http://www.jianshu.com/p/5973c05d7100" target="_blank" rel="external">http://www.jianshu.com/p/5973c05d7100</a></li>
+<li>编辑要先空格！<h1 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h1>报错，FATAL fatal: Not a git repository (or any of the parent directories): .git<br>忘记 git init</li>
+</ul>
+<p>error: failed to execute prompt script (exit code 1)<br> …config.ymld的delay部署地址错误</p>
+<p>重装系统，ssh因为文件位置变动，需要重新设置</p>
+<ul>
+<li>删除从头到尾来了一遍</li>
+<li>hexo是全局安装</li>
+<li>其他hexo插件得重新安装</li>
+</ul>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+        
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/03/20/hello-world/" rel="next" title="Hello World">
+                <i class="fa fa-chevron-left"></i> Hello World
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            見出し
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            概要
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/avatar.gif"
+               alt="kcalm" />
+          <p class="site-author-name" itemprop="name">kcalm</p>
+           
+              <p class="site-description motion-element" itemprop="description"></p>
+          
+        </div>
+        <nav class="site-state motion-element">
+
+          
+            <div class="site-state-item site-state-posts">
+              <a href="/archives">
+                <span class="site-state-item-count">13</span>
+                <span class="site-state-item-name">ポスト</span>
+              </a>
+            </div>
+          
+
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-tags">
+              <a href="/tags/index.html">
+                <span class="site-state-item-count">1</span>
+                <span class="site-state-item-name">タグ</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        
+        
+
+        
+
+
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#搭建模子"><span class="nav-number">1.</span> <span class="nav-text">搭建模子</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#github账号"><span class="nav-number">1.0.1.</span> <span class="nav-text">github账号</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#本地部署hexo"><span class="nav-number">1.1.</span> <span class="nav-text">本地部署hexo</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#设置git-推送"><span class="nav-number">1.2.</span> <span class="nav-text">设置git 推送</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#发布"><span class="nav-number">1.3.</span> <span class="nav-text">发布</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#初步优化"><span class="nav-number">2.</span> <span class="nav-text">初步优化</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#主目录-基本信息"><span class="nav-number">2.0.0.1.</span> <span class="nav-text">主目录- - - 基本信息</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#主题相关"><span class="nav-number">2.0.0.2.</span> <span class="nav-text">主题相关</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#文章引用"><span class="nav-number">2.0.1.</span> <span class="nav-text">文章引用</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#阅读全文跳转"><span class="nav-number">2.0.2.</span> <span class="nav-text">阅读全文跳转</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#常用命令"><span class="nav-number">3.</span> <span class="nav-text">常用命令</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#参考推荐-（多篇）"><span class="nav-number">4.</span> <span class="nav-text">参考推荐~~（多篇）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#问题"><span class="nav-number">5.</span> <span class="nav-text">问题</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2017</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">kcalm</span>
+</div>
+
+
+<div class="powered-by">
+  Powered by <a class="theme-link" href="https://hexo.io">Hexo</a>
+</div>
+
+<div class="theme-info">
+  Theme -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Pisces
+  </a>
+</div>
+
+
+        
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.0"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.0"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.0"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.0"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.0"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.0"></script>
+
+
+
+  
+
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
