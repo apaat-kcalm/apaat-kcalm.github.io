@@ -1,0 +1,795 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="zh-hk">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="skills," />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.0" />
+
+
+
+
+
+
+<meta name="description" content="搜索技巧网页构成标题url摘要
+目的更省力、快的找到答案
+思路确定搜索什么在什么样的网站以什么样的形式存在，会出现哪些特别的关键词
+构建搜索关键词结合网页特征表述准确简练根据反馈不断优化调整顺藤摸瓜">
+<meta property="og:type" content="article">
+<meta property="og:title" content="#12 搜索技巧、git与github">
+<meta property="og:url" content="http://yoursite.com/2017/03/28/12/index.html">
+<meta property="og:site_name" content="y'blog">
+<meta property="og:description" content="搜索技巧网页构成标题url摘要
+目的更省力、快的找到答案
+思路确定搜索什么在什么样的网站以什么样的形式存在，会出现哪些特别的关键词
+构建搜索关键词结合网页特征表述准确简练根据反馈不断优化调整顺藤摸瓜">
+<meta property="og:updated_time" content="2017-03-28T12:51:31.126Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="#12 搜索技巧、git与github">
+<meta name="twitter:description" content="搜索技巧网页构成标题url摘要
+目的更省力、快的找到答案
+思路确定搜索什么在什么样的网站以什么样的形式存在，会出现哪些特别的关键词
+构建搜索关键词结合网页特征表述准确简练根据反馈不断优化调整顺藤摸瓜">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    sidebar: {"position":"right","display":"hide","offset":12,"offset_float":0,"b2t":false,"scrollpercent":false},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2017/03/28/12/"/>
+
+
+
+
+
+  <title> #12 搜索技巧、git与github | y'blog </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-hk">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-right page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">y'blog</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首頁
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分類
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            歸檔
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            標籤
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/03/28/12/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="kcalm">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="y'blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                #12 搜索技巧、git与github
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">發表於</span>
+              
+              <time title="創建於" itemprop="dateCreated datePublished" datetime="2017-03-28T10:00:08+08:00">
+                2017-03-28
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1 id="搜索技巧"><a href="#搜索技巧" class="headerlink" title="搜索技巧"></a>搜索技巧</h1><h2 id="网页构成"><a href="#网页构成" class="headerlink" title="网页构成"></a>网页构成</h2><p>标题<br>url<br>摘要</p>
+<h2 id="目的"><a href="#目的" class="headerlink" title="目的"></a>目的</h2><p>更省力、快的找到答案</p>
+<h2 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h2><h3 id="确定搜索什么"><a href="#确定搜索什么" class="headerlink" title="确定搜索什么"></a>确定搜索什么</h3><p>在什么样的网站以什么样的形式存在，会出现哪些特别的关键词</p>
+<h3 id="构建搜索关键词"><a href="#构建搜索关键词" class="headerlink" title="构建搜索关键词"></a>构建搜索关键词</h3><p>结合网页特征<br>表述准确<br>简练<br>根据反馈不断优化调整<br>顺藤摸瓜<br><a id="more"></a> </p>
+<h3 id="搜索"><a href="#搜索" class="headerlink" title="搜索"></a>搜索</h3><h3 id="根据反馈评估，优化关键词"><a href="#根据反馈评估，优化关键词" class="headerlink" title="根据反馈评估，优化关键词"></a>根据反馈评估，优化关键词</h3><h3 id="get"><a href="#get" class="headerlink" title="get"></a>get</h3><h2 id="搜索引擎"><a href="#搜索引擎" class="headerlink" title="搜索引擎"></a>搜索引擎</h2><h3 id="技巧"><a href="#技巧" class="headerlink" title="技巧"></a>技巧</h3><h4 id="百度特有"><a href="#百度特有" class="headerlink" title="百度特有"></a>百度特有</h4><p>搜索论坛版块<br>百度<br>『 』<br>精准匹配《》<br>电影、书籍、音乐<br>根据目标特定，换语言搜索</p>
+<h4 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h4><blockquote>
+<p>intitle:<br>网页标题必须包含关键词<br>主题 intitle:关键字</p>
+<p>allintitle:<br>搜索返回的是页面标题中包含多组关键词的文件。</p>
+<h4 id="url"><a href="#url" class="headerlink" title="url"></a>url</h4><p>inurl:<br>连接中必须包含关键词</p>
+<p>inurl：任意字符串<br>allinurl</p>
+<h4 id="视频"><a href="#视频" class="headerlink" title="视频"></a>视频</h4><p>视频名称 thunder<br>视频名称 torrent（种子）、Magnet（磁力）、download（下载）</p>
+<h4 id="音乐"><a href="#音乐" class="headerlink" title="音乐"></a>音乐</h4><p>关键字 inurl:mp3</p>
+<h4 id="图片"><a href="#图片" class="headerlink" title="图片"></a>图片</h4><p>百度识图、谷歌识图/图搜<br>XXX inurl:photo</p>
+</blockquote>
+<p>s +鼠标右键 ——图片详细信息</p>
+<h4 id="site"><a href="#site" class="headerlink" title="site:"></a>site:</h4><p>关键词 site:baidu.com<br>禁止 <a href="http://；“www”前缀" target="_blank" rel="external">http://；“www”前缀</a></p>
+<h4 id="filetype"><a href="#filetype" class="headerlink" title="filetype:"></a>filetype:</h4><p>指定特定内容格式<br>关键词 filetype:格式<br>doc、xls、ppt、pdf、rtf、all。。。</p>
+<h4 id="related"><a href="#related" class="headerlink" title="related:"></a>related:</h4><p><a href="http://xxxx.com" target="_blank" rel="external">http://xxxx.com</a><br>返回的结果是与某个网站有关联的页面</p>
+<h4 id="精准匹配-“”"><a href="#精准匹配-“”" class="headerlink" title="精准匹配 “”"></a>精准匹配 “”</h4><h4 id="内容筛选"><a href="#内容筛选" class="headerlink" title="内容筛选"></a>内容筛选</h4><blockquote>
+<p>*<br>通配搜索</p>
+<p>OR</p>
+<p>A -B<br>包括A,不包括B</p>
+<p>A +B<br>包括A、B</p>
+<p>A|B<br>不太精准 A或B</p>
+<p>数字a..数字b<br>数字范围<br>​上限a—-下限b</p>
+<p>空格<br>既…，又…</p>
+<h3 id="组合"><a href="#组合" class="headerlink" title="组合"></a>组合</h3><p>site:<a href="http://xxx.com" target="_blank" rel="external">http://xxx.com</a> filetype:pdf<br>filetype :csv site:某网盘 或资源站点 inurl:某url特征。</p>
+<p>…</p>
+<h3 id="垂直网站搜索（专业平台）"><a href="#垂直网站搜索（专业平台）" class="headerlink" title="垂直网站搜索（专业平台）"></a>垂直网站搜索（专业平台）</h3></blockquote>
+<hr>
+<h1 id="git"><a href="#git" class="headerlink" title="git"></a>git</h1><h2 id="感"><a href="#感" class="headerlink" title="感"></a>感</h2><p>版本控制：记录每次文件的改动，任意滚动时间条。<br>分支管理，多人协同。建立无数个分支，在分支上进行修改迭代，合并分支，再推送至</p>
+<h2 id="win环境配置"><a href="#win环境配置" class="headerlink" title="win环境配置"></a>win环境配置</h2><p>编辑文件不要用记事本</p>
+<h3 id="安装git"><a href="#安装git" class="headerlink" title="安装git"></a>安装git</h3><p><a href="https://git-for-windows.github.io" target="_blank" rel="external">msysgit</a></p>
+<h3 id="打开-git-bash-输入"><a href="#打开-git-bash-输入" class="headerlink" title="打开 git bash 输入"></a>打开 git bash 输入</h3><blockquote>
+<p>git config –global user.name “apaat-kcalm”<br>git config –global user.email “401671898@qq.com”</p>
+</blockquote>
+<h2 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h2><p>mkdir+名<br>新建目录</p>
+<p>cd+名<br>转到目录</p>
+<p>pwd<br>显示当前目录</p>
+<p>git status<br>查看当前仓库状态</p>
+<p>git diff<br>查看做了什么不同的修改</p>
+<p>git log<br>查看所有历史<br>–pretty=oneline<br>简要信息</p>
+<p>ls 查看已有文件</p>
+<p>cat 文件名<br>查看文件全部内容</p>
+<h2 id="本地"><a href="#本地" class="headerlink" title="本地"></a>本地</h2><h3 id="创建本地仓库（repository）"><a href="#创建本地仓库（repository）" class="headerlink" title="创建本地仓库（repository）"></a>创建本地仓库（repository）</h3><h3 id="初始化"><a href="#初始化" class="headerlink" title="初始化"></a>初始化</h3><p>git init<br>当前目录多出.git文件夹</p>
+<h3 id="编辑文件"><a href="#编辑文件" class="headerlink" title="编辑文件"></a>编辑文件</h3><p>工作区==电脑文件夹</p>
+<h3 id="git-add-文件名-后缀"><a href="#git-add-文件名-后缀" class="headerlink" title="git add 文件名+后缀"></a>git add 文件名+后缀</h3><p>工作区的文件添加到暂存区</p>
+<blockquote>
+<p>Changes to be committed:</p>
+<h3 id="git-commit-m”注释”"><a href="#git-commit-m”注释”" class="headerlink" title="git commit -m”注释”"></a>git commit -m”注释”</h3><p>从暂存区提交到版本库master<br>nothing to commit (working directory clean)<br>可一次提交多个文件</p>
+<h3 id="版本"><a href="#版本" class="headerlink" title="版本"></a>版本</h3><h4 id="回退"><a href="#回退" class="headerlink" title="回退"></a>回退</h4><p>git reset –hard HEAD^</p>
+<ul>
+<li>HEAD——版本</li>
+<li>^上一个</li>
+<li>^^上上个</li>
+</ul>
+</blockquote>
+<p>版本号回退</p>
+<ul>
+<li>git reflog  查看所有版本号</li>
+<li><p>git reset –hard 版本号</p>
+<h4 id="撤销修改（提交之前）"><a href="#撤销修改（提交之前）" class="headerlink" title="撤销修改（提交之前）"></a>撤销修改（提交之前）</h4><blockquote>
+<p>git checkout – file</p>
+</blockquote>
+</li>
+<li><p>修改，但未add<br>回到和版本库（提交）状态</p>
+</li>
+<li><p>已经add，再做修改<br>回到add状态</p>
+<h4 id="删除"><a href="#删除" class="headerlink" title="删除"></a>删除</h4><p>文件目录删除<br>git rm file</p>
+<h2 id="分支"><a href="#分支" class="headerlink" title="分支"></a>分支</h2><p>合并到主分支master再推送</p>
+<h3 id="命令"><a href="#命令" class="headerlink" title="命令"></a>命令</h3><p>git branch<br>查看当前分支</p>
+</li>
+</ul>
+<p>git checkout -b 分支名<br>创建并切换</p>
+<p>git branch 分支名<br>创建分支</p>
+<p>git checkout 分支名<br>切换分支</p>
+<hr>
+<blockquote>
+<p> git merge<br>分支合并到master</p>
+<p> git merge –no-ff -m “注释” dev<br>合并后的历史有分支</p>
+</blockquote>
+<p>git branch -d 分支名<br>删除分支</p>
+<h2 id="远程仓库"><a href="#远程仓库" class="headerlink" title="远程仓库"></a>远程仓库</h2><h3 id="（已建好本地pro）关联远程仓库"><a href="#（已建好本地pro）关联远程仓库" class="headerlink" title="（已建好本地pro）关联远程仓库"></a>（已建好本地pro）关联远程仓库</h3><p>本地与远程同步~</p>
+<h4 id="（SSH）配置"><a href="#（SSH）配置" class="headerlink" title="（SSH）配置"></a>（SSH）配置</h4><p>ssh-keygen -t rsa -C “401671898@qq.com”<br>一路回车</p>
+<p>（github页面）添加SSH<br> id_rsa.pub</p>
+<p>验证<br>:ssh -T git@github.com<br>yes</p>
+<h4 id="github新建仓库"><a href="#github新建仓库" class="headerlink" title="github新建仓库"></a>github新建仓库</h4><h4 id="git-bash"><a href="#git-bash" class="headerlink" title="git bash"></a>git bash</h4><p>git remote add origin git@github.com:apaat-kcalm/仓库名.git<br><strong>关联一个远程库</strong></p>
+<p>git push -u origin master<br><strong>第一次推送master分支的所有内容</strong><br>-u 关联本地和远程master</p>
+<h4 id="git-push-origin-分支名"><a href="#git-push-origin-分支名" class="headerlink" title="git push origin 分支名"></a>git push origin 分支名</h4><p>推送新的修改</p>
+<h3 id="创建远程仓库"><a href="#创建远程仓库" class="headerlink" title="创建远程仓库"></a>创建远程仓库</h3><p>/git remote<br>查看远程库的信息</p>
+<p>git remote –v<br>详细信息</p>
+<p>克隆<br>git clone git@github.com:apaat-kcalm/仓库名.git</p>
+<p>git push origin 分支名<br>推送</p>
+<p>分支冲突—推送失败</p>
+<ul>
+<li>git pull<br>​抓取最新提交</li>
+</ul>
+<blockquote>
+<p>git pull提示“no tracking information”<br>本地分支和远程分支的链接关系没有创建<br>用命令git branch –set-upstream branch-name origin/branch-name。</p>
+</blockquote>
+<p>本地合并</p>
+<p>本地提交</p>
+<p>推送 git push origin 分支名</p>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/skills/" rel="tag"># skills</a>
+          
+        </div>
+      
+
+      
+        
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/03/25/11.ppt图表排版/" rel="next" title="#11 PPT3--图表">
+                <i class="fa fa-chevron-left"></i> #11 PPT3--图表
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目錄
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            本站概覽
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/avatar.gif"
+               alt="kcalm" />
+          <p class="site-author-name" itemprop="name">kcalm</p>
+           
+              <p class="site-description motion-element" itemprop="description"></p>
+          
+        </div>
+        <nav class="site-state motion-element">
+
+          
+            <div class="site-state-item site-state-posts">
+              <a href="/archives">
+                <span class="site-state-item-count">14</span>
+                <span class="site-state-item-name">文章</span>
+              </a>
+            </div>
+          
+
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-tags">
+              <a href="/tags/index.html">
+                <span class="site-state-item-count">1</span>
+                <span class="site-state-item-name">標籤</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        
+        
+
+        
+
+
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#搜索技巧"><span class="nav-text">搜索技巧</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#网页构成"><span class="nav-text">网页构成</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#目的"><span class="nav-text">目的</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#思路"><span class="nav-text">思路</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#确定搜索什么"><span class="nav-text">确定搜索什么</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#构建搜索关键词"><span class="nav-text">构建搜索关键词</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#搜索"><span class="nav-text">搜索</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#根据反馈评估，优化关键词"><span class="nav-text">根据反馈评估，优化关键词</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#get"><span class="nav-text">get</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#搜索引擎"><span class="nav-text">搜索引擎</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#技巧"><span class="nav-text">技巧</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#百度特有"><span class="nav-text">百度特有</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#标题"><span class="nav-text">标题</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#url"><span class="nav-text">url</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#视频"><span class="nav-text">视频</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#音乐"><span class="nav-text">音乐</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#图片"><span class="nav-text">图片</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#site"><span class="nav-text">site:</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#filetype"><span class="nav-text">filetype:</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#related"><span class="nav-text">related:</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#精准匹配-“”"><span class="nav-text">精准匹配 “”</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#内容筛选"><span class="nav-text">内容筛选</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#组合"><span class="nav-text">组合</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#垂直网站搜索（专业平台）"><span class="nav-text">垂直网站搜索（专业平台）</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#git"><span class="nav-text">git</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#感"><span class="nav-text">感</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#win环境配置"><span class="nav-text">win环境配置</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#安装git"><span class="nav-text">安装git</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#打开-git-bash-输入"><span class="nav-text">打开 git bash 输入</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#常用命令"><span class="nav-text">常用命令</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#本地"><span class="nav-text">本地</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#创建本地仓库（repository）"><span class="nav-text">创建本地仓库（repository）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#初始化"><span class="nav-text">初始化</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#编辑文件"><span class="nav-text">编辑文件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#git-add-文件名-后缀"><span class="nav-text">git add 文件名+后缀</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#git-commit-m”注释”"><span class="nav-text">git commit -m”注释”</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#版本"><span class="nav-text">版本</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#回退"><span class="nav-text">回退</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#撤销修改（提交之前）"><span class="nav-text">撤销修改（提交之前）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#删除"><span class="nav-text">删除</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#分支"><span class="nav-text">分支</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#命令"><span class="nav-text">命令</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#远程仓库"><span class="nav-text">远程仓库</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#（已建好本地pro）关联远程仓库"><span class="nav-text">（已建好本地pro）关联远程仓库</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#（SSH）配置"><span class="nav-text">（SSH）配置</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#github新建仓库"><span class="nav-text">github新建仓库</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#git-bash"><span class="nav-text">git bash</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#git-push-origin-分支名"><span class="nav-text">git push origin 分支名</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#创建远程仓库"><span class="nav-text">创建远程仓库</span></a></li></ol></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2017</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">kcalm</span>
+</div>
+
+
+<div class="powered-by">
+  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 強力驅動
+</div>
+
+<div class="theme-info">
+  主題 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Pisces
+  </a>
+</div>
+
+
+        
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.0"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.0"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.0"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.0"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.0"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.0"></script>
+
+
+
+  
+
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
